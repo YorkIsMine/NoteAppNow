@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="floatingActionButtonStyle">FAB_style</item>
+    </style>
+    
+    
+    <declare-styleable name="CustomRadioButton">
+        <attr name="title" format="string"/>
+        <attr name="android:textColor" format="color"/>
+        <attr name="price" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SectionCard">
+        <attr name="title_sc" format="string"/>
+        <attr name="content_sc" format="string"/>
+        <attr name="android:src" format="integer"/>
+    </declare-styleable>
+
+</resources>

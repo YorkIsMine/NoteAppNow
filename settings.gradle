@@ -1,0 +1,2 @@
+rootProject.name='NotesAppNow'
+include ':app'

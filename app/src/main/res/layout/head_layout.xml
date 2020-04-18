@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/head_background"
+    android:layout_marginTop="12dp">
+
+    <ImageView
+        android:id="@+id/show_drawer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_burger"
+        android:layout_marginStart="11dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Блокнот"
+        android:layout_gravity="center"
+        android:layout_marginStart="27dp"/>
+
+    <ImageView
+        android:id="@+id/user_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_icon"
+        android:layout_gravity="center"
+        android:layout_marginStart="171dp"
+        android:layout_marginEnd="16dp"/> <!-- Circle Image!-->
+
+
+</LinearLayout>

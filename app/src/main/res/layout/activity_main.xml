@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main_screen.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/head_layout" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/garbage_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lamp_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/garbage_tv"
+            android:layout_width="188dp"
+            android:layout_height="18dp"
+            android:text="Здесь будут ваши заметки"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garbage_iv"
+            android:layout_marginTop="29dp"
+            android:textColor="#212121"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:layout_marginTop="13dp">
+
+            <com.yorkismine.notesappnow.SectionCard
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/plan_icon"
+                app:content_sc="Мини-описание.Это текст о компании"
+                app:title_sc="Планирование"
+                android:visibility="gone"/>
+
+            <com.yorkismine.notesappnow.SectionCard
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/self_dev_icon"
+                app:content_sc="Мини-описание.Это текст о компании"
+                app:title_sc="Саморазвитие"
+                android:visibility="gone"/>
+
+            <com.yorkismine.notesappnow.SectionCard
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/wish_map_icon"
+                app:content_sc="Мини-описание.Это текст о компании"
+                app:title_sc="Карта желаний"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="19dp"
+        app:backgroundTint="#203A82"
+        android:src="@drawable/plus_icon"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

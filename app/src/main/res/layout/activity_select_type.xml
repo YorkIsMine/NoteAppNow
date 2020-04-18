@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.select_type_screen.SelectTypeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/head_layout" />
+
+    </LinearLayout>
+
+
+    <com.yorkismine.notesappnow.CustomRadioButton
+        android:id="@+id/plan_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#203A82"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:price="Бесплатно"
+        app:title="Планирование" />
+
+
+    <com.yorkismine.notesappnow.CustomRadioButton
+        android:id="@+id/self_develop_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#203A82"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan_card"
+        app:price="1$"
+        app:title="Саморазвитие" />
+
+
+    <com.yorkismine.notesappnow.CustomRadioButton
+        android:id="@+id/wish_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#203A82"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/self_develop_card"
+        app:price="1$"
+        app:title="Карта желаний" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="27dp"
+        android:maxLines="3"
+        android:text="Мини-описание.Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он необходим для продвижения."
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wish_card" />
+
+    <Button
+        android:id="@+id/access_btn"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:background="@drawable/access_btn_back_disabled"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        android:layout_marginTop="28dp"
+        android:text="Получить доступ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
